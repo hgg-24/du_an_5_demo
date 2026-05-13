@@ -56,6 +56,7 @@ def get_smiles_from_formula(formula):
         
     except Exception:
         return None
+
 def draw_bohr_model(atomic_number):
     """Vẽ mô hình Bohr 2D bằng Plotly."""
     # Quy tắc phân bố electron cơ bản (Klechkowski giản lược)
@@ -106,9 +107,9 @@ def draw_bohr_model(atomic_number):
 st.title("🧪 Chem-Lab: Molecular & Thermo Engine")
 st.markdown("Hệ thống trực quan hóa cấu trúc nguyên tử và phân tử đa chiều của ED-ODYSSEY.")
 
-# Thanh tìm kiếm thông minh với Unique Key
+# Thanh tìm kiếm thông minh với Unique Key. Đã thêm .strip() để tự động xóa khoảng trắng thừa do người dùng lỡ tay bấm.
 search_query = st.text_input("🔍 Nhập Ký hiệu nguyên tố (VD: C, Fe) hoặc Công thức phân tử (VD: H2O, C6H12O6):", 
-                             value="H2O", key="chem_search_input")
+                             value="H2O", key="chem_search_input").strip()
 
 # Tạo 3 Tabs (3-Panel UI) để tối ưu không gian hiển thị
 tab1, tab2, tab3 = st.tabs(["⚛️ Cấu tạo nguyên tử", "🔗 Cấu trúc 2D (Lewis)", "🌐 Mô hình 3D (WebGL)"])
