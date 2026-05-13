@@ -1,0 +1,15 @@
+# --- CỐT LÕI HỆ THỐNG & GIAO DIỆN ---
+streamlit
+pandas
+numpy
+
+# --- MODULE TOÁN & THỐNG KÊ ---
+plotly
+fpdf
+
+# --- MODULE HÓA HỌC (CHEM-LAB) ---
+requests
+rdkit-pypi
+stmol
+py3Dmol
+Pillow
