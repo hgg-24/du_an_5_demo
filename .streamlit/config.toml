@@ -1,0 +1,14 @@
+[theme]
+primaryColor = "#007AFF"
+backgroundColor = "#F4F7FA"
+secondaryBackgroundColor = "#FFFFFF"
+textColor = "#111827"
+
+[server]
+headless = true
+enableCORS = false
+enableXsrfProtection = false
+
+[browser]
+# Tự động ẩn menu Streamlit để trông chuyên nghiệp hơn
+toolbarMode = "minimal"
